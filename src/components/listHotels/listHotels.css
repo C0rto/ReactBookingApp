@@ -1,0 +1,88 @@
+.hotel-list-card {
+  display: flex;
+  background-color: var(--mainWhite);
+  border: 1px solid var(--mainGrey);
+  box-shadow: var(--lightShadow);
+  padding: 0.7em;
+  border-radius: var(--mediumBorderRadius);
+  gap: 1.3em;
+  margin-bottom: 1.5em;
+}
+.hotel-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--smallBorderRadius);
+}
+
+.hotel-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  justify-content: space-between;
+}
+.hotel-title {
+  font-size: 1.2em;
+}
+.hotel-desc > span {
+  font-size: 0.8em;
+}
+.hotel-distance {
+  font-size: 0.65em;
+  font-size: smaller;
+  color: var(--darkGrey);
+}
+.hotel-taxi {
+  font-size: 0.65em;
+  background-color: var(--primaryLightColor);
+  color: var(--mainWhite);
+  width: max-content;
+  padding: 0.25em;
+  border-radius: var(--smallBorderRadius);
+  font-size: smaller;
+}
+.hotel-subtitle {
+  font-weight: bold;
+}
+.hotel-cancel,
+.hotel-cancel-subtitle {
+  color: green;
+}
+.available-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.hotel-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+}
+.hotel-review {
+  font-size: 0.7em;
+  font-style: italic;
+}
+.hotel-rate {
+  background-color: var(--primaryColor);
+  color: var(--mainWhite);
+  padding: 0.4em;
+  border-radius: var(--smallBorderRadius);
+}
+.hotel-price {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.hotel-price-info {
+  font-size: 0.6em;
+  color: var(--darkGrey);
+}
+.hotel-pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.hotel-pricing > button {
+  padding: 0.4em 2.5em;
+}

@@ -1,0 +1,97 @@
+.search-bar {
+  font-family: var(--fontSubtitle);
+  font-size: 1em;
+  height: 4em;
+  background-color: var(--mainWhite);
+  border: 2px solid var(--offWhite);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: var(--smallBorderRadius);
+  /* giving a center position */
+  position: absolute;
+  bottom: -2.8em;
+  width: 100%;
+  box-shadow: var(--darkShadow);
+  padding: 0 0.2em;
+}
+.search-icon {
+  color: var(--darkGrey);
+  font-size: 1.8em;
+}
+.search-item {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 0.65em;
+  padding: 0.2em 1.65em;
+}
+.header-search-input {
+  font-size: 1.3em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: var(--fontSubtitle);
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+.header-search-text {
+  font-size: 1.2em;
+  color: var(--mainBlack);
+  cursor: pointer;
+  padding: 0 0.6em;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+.search-date {
+  font-family: var(--fontSubtitle);
+  position: absolute;
+  top: 4.1em;
+  box-shadow: 0 1px 5px 0 rgb(35 57 66 / 21%);
+  border-radius: 0 0 var(--mediumBorderRadius) var(--mediumBorderRadius);
+  z-index: 2;
+}
+.options {
+  font-family: var(--fontSubtitle);
+  position: absolute;
+  top: 4.1em;
+  background-color: var(--mainWhite);
+  color: var(--darkGrey);
+  padding: 0 0 0.9em 0;
+  box-shadow: 0 1px 5px 0 rgb(35 57 66 / 21%);
+  border-radius: 0 0 var(--mediumBorderRadius) var(--mediumBorderRadius);
+  z-index: 2;
+}
+.options-header {
+  padding: 0.75em 0;
+  font-size: 1em;
+  font-weight: 700;
+  color: var(--mainBlack);
+  text-align: center;
+  margin-bottom: 0.7em;
+  background-color: rgb(239, 242, 247);
+}
+.option-item {
+  padding: 0.35em 0.75em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20em;
+  max-width: 30em;
+}
+.option-text {
+  color: var(--mainBlack);
+  font-size: 1.1em;
+  flex: 1;
+}
+.option-counter {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  font-size: 0.9em;
+  color: var(--mainBlack);
+}

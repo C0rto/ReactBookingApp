@@ -1,0 +1,18 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.4em;
+  background-color: var(--primaryDarkestColor);
+}
+.nav {
+  margin: 0 0.8em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  margin-left: 0.8em;
+  font-weight: 700;
+  font-family: var(--fontSubtitle);
+}

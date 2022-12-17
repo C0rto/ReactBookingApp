@@ -1,0 +1,45 @@
+.lh {
+  width: 100%;
+  max-width: var(--fullWidth);
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5em;
+  z-index: 1;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+.lh-item {
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+}
+.lh-image {
+  width: 100%;
+  height: 180px;
+  width: 15em;
+  object-fit: cover;
+}
+.lh-name {
+  font-weight: bold;
+}
+.lh-city {
+  font-weight: 300;
+  font-size: 0.7em;
+}
+.lh-price {
+  font-weight: 600;
+  font-size: 0.8em;
+}
+.lh-rating > button {
+  background-color: var(--primaryColor);
+  color: var(--mainWhite);
+  padding: 0.3em;
+  border: none;
+  border-radius: var(--smallBorderRadius);
+  margin-right: 0.5em;
+}
+.lh-rating > span {
+  font-size: 0.8em;
+}

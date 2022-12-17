@@ -1,13 +1,153 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* 
+====== 
+Variables 
+======
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,400&family=Ovo&family=Poppins:wght@600;700;800&display=swap');
+
+:root {
+  --primarySuperLightColor: #6e9e9e;
+  --primaryLightColor: #3e7e7e;
+  --primaryColor: #0e5e5e;
+  --primaryDarkColor: #0d5555;
+  --primaryDarkerColor: #0b4b4b;
+  --primaryDarkestColor: #083838;
+  --mainWhite: #fff;
+  --mainWhiteOpc: rgba(255, 255, 255, 0.2);
+  --offWhite: #f7f7f7;
+  --mainBackground: #f0f0f0;
+  --secondBackground: #f8f5f2;
+  --mainOverlay: #b7cfcf74;
+  --mainBlack: #010909;
+  --mainGreyText: #6b6b6b;
+  --mainGrey: #ececec;
+  --darkGrey: #afafaf;
+  --mainRed: #ff3562;
+  --acidColor: #eaf8bf;
+  --yellowColor: #eca400;
+  --pinkColor: #f84aa7;
+  --orangeColor: #f45d48;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 0.1em;
+  --lightShadow: 0px 3px 3px 0px rgba(187, 187, 187, 0.069);
+  --darkShadow: 0px 6px 6px 0px rgba(59, 59, 59, 0.053);
+  --smallBorderRadius: 0.15rem;
+  --mediumBorderRadius: 0.5rem;
+  --bigBorderRadius: 2.5rem;
+  --smallWidth: 85vw;
+  --maxWidth: 40rem;
+  --midWidth: 920px;
+  --fullWidth: 1024px;
+  --fontParagraph: 'Overpass', sans-serif;
+  --fontSubtitle: 'Ovo', serif;
+  --fontTitle: 'Poppins', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* 
+====== 
+Main
+======
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--secondBackground);
+  font-family: var(--fontParagraph);
+}
+li {
+  list-style-type: none;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--fontTitle);
+}
+h4,
+h5,
+h6 {
+  font-family: var(--fontSubtitle);
+  font-weight: 600;
+}
+.container {
+  width: 100%;
+  max-width: var(--fullWidth);
+  color: var(--mainWhite);
+}
+.btn,
+.btn-nav,
+.btn-head,
+.btn-search,
+.btn-primary {
+  font-family: var(--fontSubtitle);
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+  padding: 0.25rem 0.95rem;
+  transition: var(--mainTransition);
+  cursor: pointer;
+  font-size: 0.6rem;
+  background: transparent;
+  border-radius: var(--smallBorderRadius);
+}
+.btn-nav {
+  padding: 0.25rem 0.65rem;
+  margin-left: 0.55em;
+  border: none;
+  background-color: var(--mainWhite);
+  color: var(--primaryDarkColor);
+}
+.btn-nav:hover {
+  background-color: var(--primaryLightColor);
+  color: var(--mainWhite);
+}
+.btn-head {
+  border: 2px solid transparent;
+  color: var(--mainWhite);
+  background-color: var(--primaryColor);
+  padding: 0.9em 2.6em;
+  margin-top: 0.9em;
+  font-size: 0.7em;
+}
+.btn-head:hover {
+  border: 2px solid var(--mainWhite);
+}
+.btn-search {
+  color: var(--mainWhite);
+  background-color: var(--primaryColor);
+  padding: 0.7em 1.1em;
+  font-size: 1.2em;
+  margin-right: 0.2em;
+  border: none;
+}
+.btn-search:hover {
+  background-color: var(--primaryDarkerColor);
+}
+.btn-counter {
+  background-color: var(--mainWhite);
+  border: 1px solid var(--primaryDarkColor);
+  padding: 0.25em 0.65em;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+.btn-counter:hover {
+  background-color: var(--primaryLightColor);
+}
+.btn-counter:disabled {
+  cursor: not-allowed;
+}
+.btn-primary {
+  border: 2px solid transparent;
+  color: var(--mainWhite);
+  background-color: var(--primaryColor);
+  padding: 1.15em 2em;
+  margin-top: 0.9em;
+  font-size: 0.85em;
+}
+.btn-primary:hover {
+  background-color: var(--primaryDarkerColor);
 }

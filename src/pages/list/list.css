@@ -1,0 +1,22 @@
+.main-list {
+  display: flex;
+  margin-top: 2em;
+  justify-content: center;
+}
+.big-list {
+  width: var(--fullWidth);
+  justify-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 2em;
+}
+.main-search {
+  position: sticky;
+  height: max-content;
+  /* if u want sticky */
+  top: 2em;
+  flex: 1;
+}
+.main-result {
+  flex: 3;
+}
