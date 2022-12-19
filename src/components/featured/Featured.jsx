@@ -2,7 +2,7 @@ import './featured.css';
 
 export const Featured = () => {
   return (
-    <section className="featured">
+    <section className="container flex-wrap">
       <div className="featured-item">
         <img
           src="https://cf.bstatic.com/xdata/images/city/max500/641765.webp?k=7ff35a4159b2bfde4f3861733608b4ab083831a90b3c21587062be6f809e4c4d&o="
@@ -16,7 +16,7 @@ export const Featured = () => {
       </div>
       <div className="featured-item">
         <img
-          src="https://www.tesoridabruzzo.com/wp-content/uploads/2018/07/apertura-1-900x601.jpg"
+          src="https://www.roccacalascio.info/wp-content/uploads/2013/12/ROCCA-CALASCIO-neve.jpg"
           alt=""
           className="featured-image"
         />

@@ -8,55 +8,47 @@ import {
   MdStorefront,
 } from 'react-icons/md';
 import { SearchBar } from '../searchbar/SearchBar';
-
+import { Subheader } from '../subheader/Subheader';
 export const Header = ({ type }) => {
   return (
     <div className="header">
-      <div className="head container">
-        <div className="header-list">
+      <div className="container">
+        <ul className="header-list">
           {/* single icon Navbar */}
-          <div className="header-list-item">
+          <li className="header-list-item">
             <MdHotel />
             <span>Hotel</span>
-          </div>
+          </li>
           {/* single icon Navbar */}
-          <div className="header-list-item active">
+          <li className="header-list-item active">
             <MdWeekend />
             <span>B&b</span>
-          </div>
+          </li>
           {/* single icon Navbar */}
-          <div className="header-list-item ">
+          <li className="header-list-item ">
             <MdMuseum />
             <span>Museum</span>
-          </div>
+          </li>
           {/* single icon Navbar */}
-          <div className="header-list-item">
+          <li className="header-list-item">
             <MdLocalDining />
             <span>Food</span>
-          </div>
+          </li>
           {/* single icon Navbar */}
-          <div className="header-list-item">
+          <li className="header-list-item">
             <MdStorefront />
             <span>Market</span>
-          </div>
+          </li>
           {/* single icon Navbar */}
-          <div className="header-list-item ">
+          <li className="header-list-item ">
             <MdLocalTaxi />
             <span>Car Renting</span>
-          </div>
-        </div>
+          </li>
+        </ul>
         {type !== 'list' && (
           <>
             {/* Sub-Header */}
-            <div className="subheader">
-              <h1 className="header-title">
-                Scopri l'Abruzzo in tutta la sua bellezza
-              </h1>
-              <p className="header-description">
-                Prenota facilmente e soggiorna in tutta serenità
-              </p>
-              <button className="btn btn-head">Accedi/registrati</button>
-            </div>
+            <Subheader />
             {/* Search Bar */}
             <div className="header-search">
               {/* //TODO implementing the closing tab */}

@@ -3,28 +3,23 @@
   font-size: 1em;
   height: 4em;
   background-color: var(--mainWhite);
-  border: 2px solid var(--offWhite);
+  border: 2px solid var(--primaryLightColor);
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-radius: var(--smallBorderRadius);
-  /* giving a center position */
+  border-radius: var(--mediumBorderRadius);
   position: absolute;
   bottom: -2.8em;
   width: 100%;
   box-shadow: var(--darkShadow);
-  padding: 0 0.2em;
-}
-.search-icon {
-  color: var(--darkGrey);
-  font-size: 1.8em;
+  padding: 0.2em 0em;
 }
 .search-item {
   display: flex;
   align-items: center;
   flex: 1;
   gap: 0.65em;
-  padding: 0.2em 1.65em;
+  padding: 0.5em 1.2em;
 }
 .header-search-input {
   font-size: 1.3em;
@@ -32,18 +27,12 @@
   outline: none;
   cursor: pointer;
   font-family: var(--fontSubtitle);
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
 }
 .header-search-text {
   font-size: 1.2em;
-  color: var(--mainBlack);
+  color: var(--darkGrey);
   cursor: pointer;
   padding: 0 0.6em;
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
 }
 .search-date {
   font-family: var(--fontSubtitle);
@@ -94,4 +83,18 @@
   gap: 1em;
   font-size: 0.9em;
   color: var(--mainBlack);
+}
+
+.btn-counter {
+  background-color: var(--mainWhite);
+  border: 1px solid var(--primaryDarkColor);
+  padding: 0.25em 0.65em;
+  font-size: 1.2em;
+}
+.btn-counter:hover {
+  background-color: var(--primaryLightColor);
+  color: white;
+}
+.btn-counter:disabled {
+  cursor: not-allowed;
 }

@@ -1,0 +1,23 @@
+.subheader {
+  font-family: var(--fontSubtitle);
+  max-width: var(--fullWidth);
+  height: 20em;
+}
+.subheader-sub {
+  position: absolute;
+  top: 13em;
+}
+.subheader-title {
+  font-size: 2.7em;
+}
+.subheader-description {
+  margin-bottom: 0.8em;
+}
+.subheader-img {
+  position: absolute;
+  left: 0;
+  top: 6em;
+  width: 100%;
+  height: 20em;
+  object-fit: cover;
+}

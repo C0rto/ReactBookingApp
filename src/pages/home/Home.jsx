@@ -13,7 +13,7 @@ export const Home = () => {
     <>
       <Navbar />
       <Header />
-      <main className="home-container">
+      <main className="main-wrap">
         {/* Promo */}
         <h1>Offerte</h1>
         <p>Promozioni, offerte e altri sconti speciali per te</p>

@@ -1,18 +1,10 @@
-.featured {
-  width: 100%;
-  max-width: var(--fullWidth);
-  display: flex;
-  justify-content: space-between;
-  gap: 1em;
-  z-index: 1;
-  margin-bottom: 1em;
-}
 .featured-item {
   cursor: pointer;
   position: relative;
   color: var(--mainWhite);
   overflow: hidden;
-  height: 200px;
+  height: 220px;
+  border-radius: var(--smallBorderRadius);
   flex: 1;
 }
 .featured-image {
@@ -23,4 +15,10 @@
   position: absolute;
   top: 9em;
   left: 1em;
+}
+.featured-title > h3 {
+  font-size: 1.6em;
+}
+.featured-title > h4 {
+  font-size: 1.3em;
 }

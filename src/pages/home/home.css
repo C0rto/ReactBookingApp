@@ -1,14 +1,8 @@
-.home-container {
-  margin-top: 3em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.home-container > h1 {
+.main-wrap > h1 {
   width: var(--fullWidth);
-  font-size: 20px;
+  font-size: 1.5em;
 }
-.home-container > p {
+.main-wrap > p {
   width: var(--fullWidth);
   color: var(--mainGreyText);
 }

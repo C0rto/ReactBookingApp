@@ -66,14 +66,14 @@
   width: 6em;
 }
 .list-option-input::placeholder {
-  color: var(--mainGrey);
+  color: var(--darkGrey);
 }
 .list-option-text {
   margin-right: 6em;
   width: auto;
-  font-size: 0.9em;
-  font-weight: 700;
-  color: var(--mainGreyText);
+  font-size: 0.7em;
+  font-weight: 500;
+  color: var(--primaryDarkerColor);
 }
 .list-search > button {
   width: 100%;

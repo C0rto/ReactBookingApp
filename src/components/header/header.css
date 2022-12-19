@@ -3,11 +3,10 @@
   color: var(--mainWhite);
   display: flex;
   justify-content: center;
-  padding-top: 0.4em;
+  padding-top: 0.5em;
+  margin-bottom: 3.5em;
 }
-.head {
-  margin: 0.15em 0 0.65em 0;
-}
+
 .header-list {
   display: flex;
   gap: 0.45em;
@@ -33,16 +32,7 @@
   border-radius: var(--bigBorderRadius);
   border: 1px solid var(--mainWhite);
 }
-.subheader {
-  margin: 2.85em 0.25em;
-  font-family: var(--fontSubtitle);
-}
-.header-title {
-  font-size: 2.7em;
-}
-.header-description {
-  margin-bottom: 0.8em;
-}
+
 .header-search {
   position: relative;
   margin: 0 0.25em;

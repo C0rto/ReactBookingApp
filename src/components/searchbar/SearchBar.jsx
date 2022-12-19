@@ -158,7 +158,7 @@ export const SearchBar = () => {
           </div>
         )}
       </div>
-      <button className="btn btn-search" onClick={handleSearch}>
+      <button className="btn btn-primary" onClick={handleSearch}>
         cerca
       </button>
     </section>

@@ -1,10 +1,12 @@
 .footer {
   width: 100%;
+  max-height: 20vh;
+}
+.footer-main {
   display: flex;
   gap: 0.5em;
   justify-content: center;
-  background-color: var(--primaryDarkerColor);
-  color: var(--mainWhite);
+  color: var(--primaryDarkerColor);
   padding: 0.8em 2.3em;
 }
 .fotlist {
@@ -29,9 +31,9 @@
   justify-content: space-between;
 }
 .copy {
+  margin-top: 5em;
   width: 100%;
-  background-color: var(--primaryDarkerColor);
-  color: var(--mainWhite);
+  color: var(--primaryDarkerColor);
   display: flex;
   align-content: center;
   justify-content: center;
